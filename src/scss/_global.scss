@@ -40,3 +40,14 @@ hr.light {
 .page-section {
     padding: 8rem 0;
 }
+
+// .icon:hover {
+//       font-size: 4.5rem;
+//       border-color: $brown;
+// }
+.icon:focus,.icon:hover {
+    color: darken($primary, 20%);
+}
+.icon {
+  color: $primary;
+}
