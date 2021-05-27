@@ -13,8 +13,11 @@ html(lang='en')
         // Favicon
         link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
 
-        // Font Awesome icons (free version)
-        script(src='https://use.fontawesome.com/releases/v5.15.3/js/all.js', crossorigin='anonymous')
+        //- // Font Awesome icons (free version)
+        //- script(src='https://use.fontawesome.com/releases/v5.15.3/js/all.js', crossorigin='anonymous')
+        
+        // Font Awesome icons (free version) (local)
+        script(src='js/all.min.js')
 
         //- // Google fonts
         //- link(href='https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700', rel='stylesheet')
@@ -323,14 +326,22 @@ html(lang='en')
                     // Modal
                     include privacy.pug
 
-        // Bootstrap core JS
-        script(src='https://code.jquery.com/jquery-3.5.1.min.js')
-        script(src='https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js')
-
+        //- // Bootstrap core JS
+        //- script(src='https://code.jquery.com/jquery-3.5.1.min.js')
+        //- script(src='https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js')
+        // Local Bootstrap core JS
+        script(src='js/jquery.min.js')
+        script(src='js/bootstrap.bundle.min.js')
+        
+        //- 
         // Third party plugin JS
-        script(src='https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js')
-        script(src='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js')
-
+        //- script(src='https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js')
+        //- script(src='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js')
+        // Local third party plugin JS
+        script(src='js/anime.min.js')
+        script(src='js/jquery.magnific-popup.min.js')
+        
+        
         // Core theme JS
         script(src='js/scripts.js')
         
@@ -338,8 +349,15 @@ html(lang='en')
         script(type='text/javascript' src='//www.privacypolicies.com/public/cookie-consent/3.1.0/cookie-consent.js')
         script(type='text/javascript').
           document.addEventListener('DOMContentLoaded', function () {
-          cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palette":"light","language":"de","website_name":"http://localhost:3000/","change_preferences_selector":"#changePreferences"});
+          cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palette":"light","language":"de","website_name":"testing","change_preferences_selector":"#changePreferences"});
           });
+        // technically necessary (bootstrap, animation, jquery, icons)
+        //- script(type='text/plain' cookie-consent='strictly-necessary' src='https://code.jquery.com/jquery-3.5.1.min.js')
+        //- script(type='text/plain' cookie-consent='strictly-necessary' src='https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js')
+        //- script(type='text/plain' cookie-consent='strictly-necessary' src='https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js')
+        //- script(type='text/plain' cookie-consent='strictly-necessary' src='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js')
+        //- script(type='text/plain' cookie-consent='strictly-necessary' src='https://use.fontawesome.com/releases/v5.15.3/js/all.js', crossorigin='anonymous')
+        // end of technically necessary (bootstrap, animation, jquery, icons)
         noscript
           | Cookie Consent by 
           a(href='https://www.PrivacyPolicies.com/cookie-consent/' rel='nofollow noopener') PrivacyPolicies.com
