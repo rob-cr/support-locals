@@ -69,4 +69,11 @@
         }
     });
 
+    // Open privacy Modal with url
+    $(document).ready(function() {
+        if (window.location.href.indexOf('#privacyModal') != -1) {
+            $('#privacyModal').modal('show');
+          }
+    });
+
 })(jQuery); // End of use strict
