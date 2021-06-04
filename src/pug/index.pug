@@ -108,8 +108,17 @@ html(lang='de')
                             | Den können Sie aktiv beeinflussen.
                             br
                             br
-                            | Mit Ihrem kostenlosen Unternehmensprofil bei Google.
+                            | Mit Ihrem kostenlosen Unternehmensprofil bei Google
+                            a.link.text-muted(type='button' data-toggle='modal' data-target='#backgroundModal')
+                              | (was ist das?).  
+                        .container
+                          .text-center.text-muted.mb-4
+                              // backgroundModal
+                              include background.pug
+
                         hr.divider.my-4
+                        //- button.btn.btn-secondary(type='button' data-container='body' data-toggle='popover' data-placement='top' data-content='Top popover')
+                        //-   | Popover on top
                         h3.text-center.mb-4 Um gefunden zu werden
                         p.text-muted.mb-4
                             | Der Großteil aller Neukunden sucht Sie zuerst online.
