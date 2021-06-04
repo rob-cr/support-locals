@@ -48,8 +48,9 @@ html(lang='de')
         // Navigation
         nav#mainNav.navbar.navbar-expand-lg.navbar-light.fixed-top.py-3
             .container
-                img.d-inline-block.align-top(src='assets/logo.ico' height='20' alt='logo')
-                a.navbar-brand.js-scroll-trigger(href='#page-top') Online-Marketing Eifel
+                a.js-scroll-trigger(href='#page-top')
+                  img.d-inline-block.align-top(src='assets/logo.ico' height='20' alt='logo')
+                a.navbar-brand.d-none.d-sm-block.js-scroll-trigger(href='#page-top') Online-Marketing Eifel
                 button.navbar-toggler.navbar-toggler-right(type='button', data-toggle='collapse', data-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
                     span.navbar-toggler-icon
                 #navbarResponsive.collapse.navbar-collapse
