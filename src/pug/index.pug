@@ -78,7 +78,7 @@ html(lang='de')
                         h1.text-uppercase.text-white.font-weight-bold Zeigen Sie es!
                         hr.divider.my-4
                     .col-lg-8.align-self-baseline
-                        p.text-white-75.font-weight-light.mb-5
+                        p.text-white-75.font-weight-light.mb-3
                             | Lokale Betriebe sind online oft nicht so sichtbar, wie sie es verdient hätten.
                             br
                             | Dadurch entgehen Ihnen viele Chancen auf neue und zufriedene Kunden.
@@ -87,7 +87,7 @@ html(lang='de')
                             | Das lässt sich ändern:
                             br
                             br
-                            | Mit Ihrem Google-Brancheneintrag!
+                        h3.text-white.font-weight-bold.mb-5 Mit Ihrem Google-Brancheneintrag!
                             //- | Dabei wird neben einer Website eine Sache meist vernachlässigt: Ihr Online-Brancheneintrag!                            
                         a.btn.btn-primary.btn-xl.js-scroll-trigger(href='#about') Ist das so wichtig?
 
@@ -96,18 +96,33 @@ html(lang='de')
             .container
                 .row.justify-content-center
                     .col-lg-8.text-center
+                        h5.text-muted.mt-0 Ihr Google-Brancheneintrag
                         h2.text-center.mt-0.mb-4 
-                          | Ihr Google-Brancheneintrag:
-                          br
-                          br 
-                          | Wichtiger, als Sie denken
+                          //- | Ihr Google-Brancheneintrag:
+                          //- br
+                          //- br 
+                          | Wichtiger, als Sie denken!
                         //- hr.divider.my-4
+                        hr.divider.my-4
                         p.text-muted.mb-4
                             | Das Erste, was wir online von einem Unternehmen sehen, ist meist nicht die Homepage, sondern der Brancheneintrag bei Google und Google Maps.
+                            | Eingerichtet und aktiv verwaltet wird das "digitale Türschild" oft aber nicht.
                             br
+                            | Dabei ist dieser Eintrag besonders relevant:
                             br
-                            | Den können Sie aktiv beeinflussen.
+                        ul.text-muted.text-left
+                            li 92% wählen den Betrieb, der auf der <strong>ersten Seite</strong> erscheint
+                              a.link.text-muted(type='button' href='https://seoexpertbrad.com/local-seo-stats/' target='_blank')
+                                | (Quelle)
                             br
+                            li 84% finden Ihren Eintrag "zufällig" unter mehreren Mitbewerbern über die indirekte Suche nach einem ähnlichen Betrieb
+                              a.link.text-muted(type='button' href='https://www.brightlocal.com/research/google-my-business-insights-study/' target='_blank')
+                                | (Quelle)
+                        p.text-muted
+                            //- | Mit der immer weiter steigenden Anzahl an Suchen ist es umso wichtiger, dass Ihr Eintrag neben den Mitbewerbern auch gefunden wird.
+                            //- br
+                            br
+                            | Diesen Eintrag können Sie aktiv beeinflussen.
                             br
                             | Mit Ihrem kostenlosen Unternehmensprofil bei Google
                             a.link.text-muted(type='button' data-toggle='modal' data-target='#backgroundModal')
@@ -117,56 +132,92 @@ html(lang='de')
                               // backgroundModal
                               include background.pug
 
-                        hr.divider.my-4
+                        //- hr.divider.my-4
                         //- button.btn.btn-secondary(type='button' data-container='body' data-toggle='popover' data-placement='top' data-content='Top popover')
                         //-   | Popover on top
-                        h3.text-center.mb-4 Um gefunden zu werden
-                        p.text-muted.mb-4
-                            | Der Großteil aller Neukunden sucht Sie zuerst online.
-                            br
-                            br
-                            //- | Wussten Sie, dass Sie keine teure Homepage oder Marketing-Abteilung brauchen, um wesentlich häufiger im Netz gefunden zu werden?
-                            //- br            
+                        h3.text-center.mt-5.mb-4 Besonders lokale Betriebe profitieren
+                        hr.divider.my-4
+                        p.text-muted.mb-4            
                             | <strong>Ob</strong> und <strong>wie</strong> Ihr Geschäft in der Online-Suche erscheint,
                             | das ist besonders für lokale Betriebe entscheidend: 
-                            | Die Suchmaschinen sind darauf ausgelegt, Ihnen eine faire Chance gegenüber größeren Konkurrenten zu geben.
-                            br
+                            | Die Suchmaschinen sind darauf ausgelegt, lokalen Betrieben eine faire Chance gegenüber größeren Konkurrenten zu geben.
                             br
                             | Nutzen Sie diesen Vorteil!
-                        hr.divider.my-4
-                        h3.text-center.mb-4 Der erste Eindruck zählt
+                        ul.text-muted.text-left.mb-4
+                            li 46% aller Google-Suchen beziehen sich auf <strong>lokale Betriebe</strong>
+                              a.link.text-muted(type='button' href='https://www.socialmediatoday.com/news/12-local-seo-stats-every-business-owner-and-marketer-should-know-in-2019-i/549079/' target='_blank')
+                                | (Quelle)
+                            br
+                            li 72% suchen Infos über ein lokales Geschäft <strong>zuerst online</strong>
+                              a.link.text-muted(type='button' href='https://www.socialmediatoday.com/news/12-local-seo-stats-every-business-owner-and-marketer-should-know-in-2019-i/549079/' target='_blank')
+                                | (Quelle)
+                            //- br    
+                            //- li 
+                            //-   a.link.text-muted(type='button' href='https://seoexpertbrad.com/local-seo-stats/' target='_blank')
+                            //-   | 92% wählen den Betrieb, der auf der <strong>ersten Seite</strong> erscheint
+                            br
+                            li Die Anzahl der lokalen Suchen ist seit 2018 um mehr als <strong>900% gestiegen</strong>
+                              a.link.text-muted(type='button' href='https://www.chatmeter.com/blog/50-local-seo-stats-every-marketer-should-know-2018/' target='_blank')
+                                | (Quelle)
+                            br
+                            li 88% besuchen einen Betrieb <strong>innerhalb von 24 Stunden,</strong> nachdem sie online gesucht haben
+                              a.link.text-muted(type='button' href='https://seoexpertbrad.com/local-seo-stats/' target='_blank')
+                                | (Quelle)
                         p.text-muted.mb-4
-                            | Fehlende Infos schrecken ab.
-                            br
-                            br
+                            | Sorgen Sie dafür, dass dieser Betrieb Ihrer ist!
+                            //- | Wussten Sie, dass Sie keine teure Homepage oder Marketing-Abteilung brauchen, um wesentlich häufiger im Netz gefunden zu werden?
+                            //- br
+                        //- p.text-muted.mb-4            
+                            //- | <strong>Ob</strong> und <strong>wie</strong> Ihr Geschäft in der Online-Suche erscheint,
+                            //- | das ist besonders für lokale Betriebe entscheidend: 
+                            //- | Die Suchmaschinen sind darauf ausgelegt, lokalen Betrieben eine faire Chance gegenüber größeren Konkurrenten zu geben.
+                            //- br
+                            //- br
+                            //- | Nutzen Sie diesen Vorteil!
+                        //- hr.divider.my-4
+                        h3.text-center.mb-4 Der erste Eindruck zählt
+                        hr.divider.my-4
+                        p.text-muted.mb-4    
+                            | Wurden Sie erst einmal gefunden, kommt es auf den ersten Eindruck an, den Ihr Brancheneintrag hinterlässt.
+                            br     
                             | Wussten Sie, dass fehlende oder nicht aktuelle Infos bei der Online-Suche potenzielle Kunden davon abhalten, Ihr Geschäft überhaupt zu besuchen?
-                            | Fast die Hälfte bricht die Suche sogar schon ab, wenn nur die Adresse oder Öffnungszeit nicht korrekt ist.
+                        ul.text-muted.text-left.mb-4
+                            li
+                              | Fast die <strong>Hälfte</strong> der Suchenden bricht die Suche sogar schon ab, wenn Adresse oder Öffnungszeit fehlen
+                            br
+                            li
+                              | 80% neuer Kunden verliert das Vertrauen in den Betrieb, wenn wichtige Infos falsch sind
+                              a.link.text-muted(type='button' href='https://www.brightlocal.com/research/local-citations-trust-report/' target='_blank')
+                                | (Quelle)
                             //- br
                             //- | Ihr Brancheneintrag wird meist automatisiert erstellt, wenn Sie ihn nicht aktiv verwalten. Sind dort falsche Infos oder schlechte Bilder zu finden, wird das Ihrem Betrieb zugeschrieben
                             //- | und das Vertrauen schwindet, auch wenn Sie gar nicht dafür verantwortlich sind.
                             //- br
                             //- br
                             //- | Der erste Eindruck zählt!
-                        hr.divider.my-4
+                        //- hr.divider.my-4
+                        p.text-muted.mb-4
+                            | Fehlende Infos schrecken ab. Mit einem gepflegten Brancheneintrag gewinnen Sie Kunden für sich.
                         h3.text-center.mb-4 Lassen Sie sich beraten
+                        hr.divider.my-4
                         p.text-muted.mb-4
                             | Persönlich und unkompliziert.
                             br
                             br
                             //- | Mit einfachen Mitteln können Sie Ihren Brancheneintrag nutzen, um wesentlich häufiger gefunden zu werden und mehr Kunden zu gewinnen.
                             //- | Mit Ihrem kostenlosen Google Unternehmensprofil können Sie Ihre Einträge in der Suche oder Google Maps verwalten und optimieren.
-                            | Ich helfe Ihnen persönlich bei der optimalen Umsetzung.
+                            | Ich übernehme für Sie die optimale Einrichtung und Verwaltung Ihres Google-Brancheneintrags.
                             br
                             br
-                            | Für mehr zufriedene Kunden.
+                            | Für mehr zufriedene Kunden und weniger Arbeit für Sie.
                             //- | Diese Dienste werden von den Suchmaschinen-Betreibern kostenlos angeboten und müssen lediglich sinnvoll eingerichtet und genutzt werden, individuell angepasst an Ihren Betrieb.
                             //- | Ich helfe Ihnen bei der Erstellung Ihres individuellen Unternehmensprofils und der Verwaltung Ihres Brancheneintrags, damit Sie Ihren Vorteil als lokaler Betrieb optimal nutzen können.
-                        a.btn.btn-primary.btn-xl.js-scroll-trigger(href='#services') Los geht's!
+                        a.btn.btn-primary.btn-xl.js-scroll-trigger(href='#contact') Kontakt
 
         // Services
         section#services.page-section
             .container
-                h2.text-center.mt-0 Mehr Kunden in wenigen Schritten
+                h2.text-center.mt-0 Was übernehme ich für Sie?
                 hr.divider.my-4
                 .row
                     .col-lg-3.col-md-6.text-center
@@ -296,11 +347,18 @@ html(lang='de')
                               //- | Dabei habe ich erkannt, dass besonders bei kleinen und lokalen Betrieben, 
                               //- | die nicht die Zeit und das Geld für große Marketing-Kampagnen haben, das Unternehmensprofil vernachlässigt wird. Sie kümmern sich um Ihr Kerngeschäft und das ist auch gut so!
                               //- br
-                              | Ich helfe Ihnen bei der Verwaltung und Optimierung Ihres Google-Brancheneintrags und -Unternehmensprofils.
+                              | Immer wieder fällt mir auf, dass Betriebe in der Eifel, meiner Heimat, online nicht ausreichend vertreten sind.
+                              | Dabei ist das besonders wichtig, um neue Kunden zu erhalten und in einer sich rasch entwickelnden (Online-)Welt konkurrenzfähig zu bleiben.
+                              | Oft fehlt aber die Zeit, das Wissen oder das Budget, um sich auch darum noch zu kümmern.
+                              br
+                              br
+                              | Das will Ich ändern!
+                              br
+                              | Ich übernehme für Sie die Einrichtung und regelmäßige Optimierung mit allem, was dazugehört, damit Ihr Unternehmen sichtbar wird und hervorragend dasteht.
+                              | Damit Sie sich um Ihren Betrieb kümmern können.
                               br
                               br
                               | Dabei lege ich Wert darauf, Sie direkt, persönlich und unkompliziert zu unterstützen und den individuellen Charakter Ihres Betriebs in der Eifel zu unterstreichen.
-                              br
                               br
                               | Denn das ist schließlich das, was Sie den großen Konkurrenten voraushaben und Sie zukunftsfähig macht!
                               //- | und verfolge ich mit großer Begeisterung.
@@ -355,7 +413,7 @@ html(lang='de')
                 .row
                     .col-lg-4.ml-auto.text-center.mb-5.mb-lg-0
                         i.fas.fa-phone.fa-3x.mb-3.text-muted
-                        a.d-block(href='tel:015787406494') 0157 87406494
+                        a.d-block(href='tel:+4915223693735') 0152 23693735
                     .col-lg-4.mr-auto.text-center
                         i.fas.fa-envelope.fa-3x.mb-3.text-muted
 
